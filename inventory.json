@@ -1,0 +1,40 @@
+{
+    "all": {
+        "children": {
+            "windows": {
+                "hosts": {
+                    "server1": {
+                        "allow_service_deployment": "true",
+                        "ansible_become_user": "SYSTEM",
+                        "ansible_connection": "winrm",
+                        "ansible_host": "IP_ADDRESS_OF_SERVER_1",
+                        "ansible_password": "PASSWORD_OF_SERVER_1",
+                        "ansible_port": "5986",
+                        "ansible_user": "USERNAME_OF_SERVER_1",
+                        "ansible_winrm_server_cert_validation": "ignore"
+                    },
+                    "server2": {
+                        "allow_service_deployment": "true",
+                        "ansible_become_user": "SYSTEM",
+                        "ansible_connection": "winrm",
+                        "ansible_host": "IP_ADDRESS_OF_SERVER_2",
+                        "ansible_password": "PASSWORD_OF_SERVER_2",
+                        "ansible_port": "5986",
+                        "ansible_user": "USERNAME_OF_SERVER_2",
+                        "ansible_winrm_server_cert_validation": "ignore"
+                    },
+                    "server3": {
+                        "allow_service_deployment": "true",
+                        "ansible_become_user": "SYSTEM",
+                        "ansible_connection": "winrm",
+                        "ansible_host": "IP_ADDRESS_OF_SERVER_3",
+                        "ansible_password": "PASSWORD_OF_SERVER_3",
+                        "ansible_port": "5986",
+                        "ansible_user": "USERNAME_OF_SERVER_3",
+                        "ansible_winrm_server_cert_validation": "ignore"
+                    }
+                }
+            }
+        }
+    }
+}
