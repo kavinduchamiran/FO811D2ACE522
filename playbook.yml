@@ -3,7 +3,7 @@
 - name: Copy PowerShell script to Windows servers and execute it with parameters
   connection: network_cli
   gather_facts: false
-  hosts: windowst
+  hosts: windows
   tasks:
     - win_copy:
         src: ./script.ps1
