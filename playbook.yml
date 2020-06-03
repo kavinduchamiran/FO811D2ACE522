@@ -11,3 +11,6 @@
         remote_src: no
 
     - win_shell: C:\script.ps1 {{ param1 }} {{ param2 }}
+      register: output
+
+    - debug: msg="{{ output.stdout }}"
